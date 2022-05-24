@@ -14,6 +14,7 @@ import pandas as pd
 
 
 def interp_sampling(df, n):
+    # Suggestion: describe the input variables
     # MTS
     if df['Load'].mean() < 0:
         df['Load'] = -df['Load']
